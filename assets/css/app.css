@@ -1,0 +1,37 @@
+:root{
+    --letter-title:#4D5E80;
+    --letter-sub:#00000077;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+/*ENCABEZADO*/
+.container-encabezado {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rrss i{
+    border-radius: 50%;
+    background-color: #0061E0;
+    align-items: center;
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+    color: #ffffff;
+}
