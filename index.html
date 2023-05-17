@@ -16,78 +16,245 @@
     <!--Icons-->
     <script src="https://kit.fontawesome.com/99843bb491.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <main class="">
+<body data-bs-spy="scroll" data-bs-target="#TableOfContents">
+
+    <main class="container-fluid">
 
         <!--SECCION ENCABEZADO-->
-        <div class="container-encabezado">
-            <header class="">
-                <div class="" href="#">
-                    <img src="assets/img/Image 2.svg" alt="El Zanjon Logo">
-                </div>
-            </header>
+        <nav class="navbar navbar-expand-lg nav_menu">
 
-            <nav class="navbar navbar-expand-sm me-5">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid">
+
+                <img src="assets/img/Image 2.svg" alt="">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse navb" id="navbarSupportedContent">
-                    <ul class="navbar-nav ">
+
+                <div class="collapse navbar-collapse div_nav" id="navbarScroll">
+
+                    <!--enlaces section-->
+                    <ul class="navbar-nav navbar-nav-scroll navbar-nav-menu " style="--bs-scroll-height: auto;">
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#section-carrousel">INCIO</a>
+                            <a class="nav-link active"  href="#carrousel">INICIO</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">SECRETARIAS</a>
+                            <a class="nav-link active" href="#secretarias">SECRETARIAS</a>
                         </li>
+
                         <!--dropdown-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">PROYECTOS</a>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PROYECTOS
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">ZANJON ACTIVO</a></li>
-                                <li><a class="dropdown-item" href="#">NODOS DEL CONOCIMIENTO</a></li>
+                                <li><a class="dropdown-item" href="#">USINAS DEL CONOCIMIENTO</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">NOTICIAS</a>
+                            <a class="nav-link active" href="">NOTICIAS</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">CONTACTO</a>
+                            <a class="nav-link active"  href="contacto">CONTACTO</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">PUNTOS</a>
+                            <a class="nav-link active"  href="#">TURISMO</a>
                         </li>
                     </ul>
+
                     <!--RRSS-->
-                    <ul class="navbar-nav ">
+                    <ul class="navbar-nav navrrss">
                         <li class="nav-item rrss">
-                            <a href="">
+                            <a href="https://www.facebook.com/ComisionMunicipalElZanjon">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="nav-item rrss">
-                            <a href="">
+                            <a href="https://www.facebook.com/ComisionMunicipalElZanjon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li> 
                     </ul>
                 </div>
-            </nav>
-        </div>
 
+            </div>
+        </nav>
+
+    
         <!--SECCION CARROUSEL-->
         <section class="carrousel" id="section-carrousel">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                </div>
+                <div class="carousel-inner">
 
+                    <div class="carousel-item active">
+                        <img src="assets/img/cumple182.png" width="95%" height="450px" alt="">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1>El Zanjon, Santiago del Estero</h1>
+                                <p>Localidad</p>
+                                <p><a class="btn btn-lg btn-primary" target="_blank" href="https://goo.gl/maps/Z2gfnde7qvJSeaGP6">Ubicacion</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/img/cumple182.png" width="95%" height="450px" alt="">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>El Zanjon, Santiago del Estero</h1>
+                                <p>Localidad</p>
+                                <p><a class="btn btn-lg btn-primary" target="_blank" href="https://goo.gl/maps/Z2gfnde7qvJSeaGP6">Ubicacion</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/img/cumple182.png" width="95%" height="450px" alt="">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>El Zanjon, Santiago del Estero</h1>
+                                <p>Localidad</p>
+                                <p><a class="btn btn-lg btn-primary" target="_blank" href="https://goo.gl/maps/Z2gfnde7qvJSeaGP6">Ubicacion</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </section>
-        <!--SECCION INFO PRINCIPAL-->
+
+        <!--SECTION INFO ZANJON-->
+        <section class="aboutus">
+
+            <div class="div_header">
+              <a class="badge_services">LOCALIDAD</a>
+              <h1>EL ZANJON</h1>
+              <p class="header_title">El Zanjón, Santiago del Estero</p>
+              <h5 class="text-center">Cuenta con 2290 habitantes (Indec, 2010), lo que representa un incremento del 4,95% frente a los 2182 habitantes (Indec, 2001) del censo anterior. Se encuentra conurbada con la Ciudad de Santiago de Estero y La Banda, en una aglomeración que el INDEC denomina Santiago del Estero - La Banda.</h5>
+            </div>
+
+            <div class="div_row">
+                <div class="div_row_item">
+                    <h2>182</h2>
+                    <h3>AÑOS</h3>
+                </div>
+                <div class="div_row_item">
+                    <h2>2290</h2>
+                    <h3>HABITANTES</h3>
+                </div>
+                <div class="div_row_item">
+                    <h2>50000</h2>
+                    <h3>HECTAREAS</h3>
+                </div>
+            </div>
+        </section>
+
         <!--SECCION SERVICIOS-->
-        <!--SECCION SECRETARIAS-->
+        <section class="services">
+            <div class="div_header">
+                <a class="badge_services">SERVICIOS</a>
+                <h1>SERVICIOS</h1>
+                <p class="header_title">SERVICIOS</p>
+                <h5 class="text-center">En esta localidad contas con diferentes servicios.</h5>
+            </div>
+
+            <div class="div_row">
+                <div class="div_row_item">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h5>Alumbrado Publico</h3>
+                </div>
+                <div class="div_row_item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <h5>Agua Potable</h5>
+                </div>
+                <div class="div_row_item">
+                    <i class="fa-solid fa-house-medical"></i>
+                    <h5>UPA y CAPS</h5>
+                </div>
+                <div class="div_row_item">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <h5>Recoleccion de Basura</h5>
+                </div>
+            </div>
+        </section>
+        
+        <!--SECTION SECRETARIAS-->
+        <section class="secretarias">
+
+            <div class="div_header">
+                <a class="badge_services">SECRETARIAS</a>
+                <h1>SECRETARIAS</h1>
+                <p class="header_title">SECRETARIAS</p>
+                <h5 class="text-center">El comisionado del Zanjon cuenta con diversas secretarias para atender las necesidades y asegurar el bienestar de los residentes.</h5>
+            </div>
+
+            <div class="div_row">
+                <div class="div_row_item">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h5>Calidad de Vida</h3>
+                </div>
+                <div class="div_row_item">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <h5>Prensa y Difusion</h3>
+                </div>
+                <div class="div_row_item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h5>Tecnologia</h3>
+                </div>
+                <div class="div_row_item">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h5>Medio Ambiente</h3>
+                </div>
+                <div class="div_row_item">
+                    <i class="fa-solid fa-handshake-slash"></i>
+                    <h5>Proyectos</h3>
+                </div>
+                <div class="div_row_item">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h5>Cultura</h3>
+                </div>
+            </div>
+        </section>
+
         <!--SECCION UBICACION-->
+        <!--SECTION CONTACTO-->
+        <section class="contacto">
+            <div class="div_header">
+                <a class="badge_services">UBICACION</a>
+                <h1>UBICACION</h1>
+                <p class="header_title">UBICACION</p>
+                <h5 class="text-center">Tambien, te compartimos un formulario donde podes hacer consultas o dejarnos tu opinion &#128512;</h5>
+            </div>
 
-
+            <div class="div_row">
+                <div class="div_row_item">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebwyOdSCpoXsUyF-EH4Vs7ryB9Rbzr47OgQPcvg5JPf8P7Ow/viewform?embedded=true"   frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                </div>
+                <div class="div_row_item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d548.5859499809504!2d-64.24364806844444!3d-27.869443969405825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sar!4v1684364441535!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
     </main>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>

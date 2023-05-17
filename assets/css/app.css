@@ -10,28 +10,204 @@ body {
 }
 main {
     display: flex;
-    flex-direction: column;
-}
-/*ENCABEZADO*/
-.container-encabezado {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column; 
 }
 
+
+/*ENCABEZADO*/
+.nav_menu, .div_nav {
+    justify-content: space-evenly;
+}
+.navbar-nav-menu {
+    gap: 18px;
+}
+.navrrss{
+    margin: 0 20px 0 20px;
+}
 .rrss i{
-    border-radius: 50%;
-    background-color: #0061E0;
     align-items: center;
-    display: inline-block;
-    color: #ffffff;
+    background-color: #0061E0;
     border: 1px solid #ffffff;
-    width: 36px;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
     height: 36px;
     line-height: 36px;
-    cursor: pointer;
+    margin-right: 5px;
     text-align: center;
     transition: all ease-in-out .3s;
-    margin-right: 5px;
-    color: #ffffff;
+    width: 36px;
 }
+@media (max-width:600px){
+    .container-header{
+       display: block;
+    }
+    .navrrss {
+        flex-direction: row;
+    }
+}
+
+
+/*CAROUSEL*/
+.carousel-item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width:600px){
+    .carousel-item img{
+        max-height: 200px;
+    }
+    .carousel-caption h1{
+        font-size: 20px;
+    }
+    .carousel-caption p{
+        font-size: 14px;
+    }
+    .carousel-caption .btn{
+        font-size: 14px;
+    }
+}
+
+section {
+    margin-bottom: 50px;
+}
+/*ABOUT, SERVICES*/
+.aboutus, .services, .secretarias, .contacto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    height: auto;
+    left: 10%;
+    margin-bottom: 50px;
+    padding: 0px;
+    position: relative;
+    width: 80%;
+}
+.div_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus .div_row {
+    gap: 80px;
+}
+.div_header h1{
+    font-weight: 900;
+    font-size: 100px;
+    color: #000000;
+    opacity: 0.05;
+}
+.div_header .badge_services {
+    background: #99d1a1f7;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.header_title {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+}
+.div_row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.div_row h2{
+    font-size: 20px;
+}
+.div_row h3{
+    font-size: 16px;
+}
+.div_row_item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.div_row_item h5 {
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}
+.services .div_row, .secretarias .div_row {
+    gap: 30px;
+}
+.div_row_item i{
+    /*align-items: center;
+    background-color: #0061E0;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 5px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    width: 36px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 80px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 60px rgba(38, 51, 77, 0.05);
+    border-radius: 120px;
+}
+
+.div_row_item iframe {
+    width: 400px;
+    height: 400px;
+}
+@media (max-width:600px){
+    .div_header h1{
+        font-size: 40px;
+    }
+    .div_header .badge_services {
+        font-size: 8px;
+    }
+    .header_title {
+        font-size: 14px;
+        top: 40px;
+    }
+    .div_header h5{
+        font-size: 14px;
+    }
+    .div_row {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .div_row h2{
+        font-size: 14px;
+    }
+    .div_row h3{
+        font-size: 12px;
+    }
+    .div_row_item h5 {
+        font-size: 12px;
+    }
+    .aboutus .div_row, .services .div_row, .secretarias .div_row  {
+        gap: 10px;
+    }
+    .div_row_item iframe {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+}
+
+
