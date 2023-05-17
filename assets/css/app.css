@@ -113,7 +113,7 @@ section {
     color: #000000;
     font-size: 20px;
     position: absolute;
-    top: 80px;
+    top: 150px;
 }
 .div_row {
     align-items: center;
@@ -173,6 +173,7 @@ section {
     height: 400px;
 }
 @media (max-width:600px){
+    
     .div_header h1{
         font-size: 40px;
     }
@@ -181,7 +182,7 @@ section {
     }
     .header_title {
         font-size: 14px;
-        top: 40px;
+        top: 70px;
     }
     .div_header h5{
         font-size: 14px;
